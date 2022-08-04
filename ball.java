@@ -1,9 +1,9 @@
 public class ball {
-    float x;
-    float y;
-    int radius;
-    float yDelta;
-    float xDelta;
+   private float x;
+   private float y;
+   private  int radius;
+   private  float yDelta;
+   private  float xDelta;
 
     public ball(float x, float y, int radius, float yDelta, float xDelta) {
         this.x = x;
@@ -46,8 +46,19 @@ public class ball {
 
     }
 
-    public void move() {}
-    public void reflectHorizontal(){}
-    public void reflectvertical(){}
+    public void move(){
+    this.x+this.xDelta;
+     this.y+this.yDelta;
+    }
+    public void reflectHorizontal(){
+     setX(-this.getX());
+        
+        
+    }
+    public void reflectvertical(){
+    
+         setY(-this.getY());
+    
+    }
 
 }
