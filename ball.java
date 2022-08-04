@@ -51,13 +51,13 @@ public class ball {
      this.y+this.yDelta;
     }
     public void reflectHorizontal(){
-     setX(-this.getX());
+     setxDelta(-this.getxDelta());
         
         
     }
     public void reflectvertical(){
     
-         setY(-this.getY());
+         setyDelta(-this.getyDelta());
     
     }
 
