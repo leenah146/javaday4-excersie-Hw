@@ -1,7 +1,11 @@
 public class MyPoint {
-    int x;
-    int y;
-
+   private int x;
+   private int y;
+    
+   public my point(){
+    
+    }
+    
     public MyPoint(int x, int y) {
         this.x = x;
         this.y = y;
@@ -22,13 +26,15 @@ public class MyPoint {
     public void setY(int y) {
         this.y = y;
     }
-    public int getXY() {
+    public int[] getXY() {
         int XY[]=new int[2];
-        return 2-XY;//I couldn't understand this part
+        int arr[]={this.x,this.y};
+        return arr;
     }
     public void setXY(int x ,int y){
-        this.x = x;
-        this.y = y;
+     setX(x);
+     setY(y);   
+        
     }
 
     @Override
@@ -39,8 +45,27 @@ public class MyPoint {
                 '}';
     }
 
-    public double distance (int x,int y){
-        return ;
+    public double distance(int x,int y){
+        //
+       
+        return Math.sqrt(Math.pow()this.x-x,2)+Math.pow(this.y-y,2) ;
     }
+    
+    
+    public double distance(MyPoint mypoint){
+        //
+       
+        return Math.sqrt(Math.pow()this.x-mypoint.getX(),2)+Math.pow(this.y-mypoint.gety(),2) ;
+       
+    }
+    
+    
+      public double distance(MyPoint mypoint){
+        //
+       
+        return Math.sqrt(Math.pow()this.x-mypoint.getX(),2)+Math.pow(this.y-mypoint.gety(),2) ;
+       
+    }
+
 
 }
